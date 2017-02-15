@@ -51,7 +51,7 @@
 &lt;hr&gt;
 &lt;p&gt;Alright, with that out of the way, just what overly complicate way am I doing this?&lt;/p&gt;
 &lt;p&gt;I thought of doing this as a parody of a lot of the “static” site generators I have seen, but adding in some compiling from source, custom kernels and multiple versions of python for different build processes, but settled for using &lt;a href=&quot;https://github.com/jnordberg/wintersmith&quot;&gt;Wintersmith&lt;/a&gt; to generate things, and some python (inspired by &lt;a href=&quot;https://github.com/jefftriplett/personal-goals&quot;&gt;Jeff Triplett’s personal goals&lt;/a&gt; ) to push it all live.&lt;/p&gt;
-&lt;h3 id=&quot;update-py&quot;&gt;Update.py&lt;/h3&gt;
+&lt;h3 id=&quot;tasks-py&quot;&gt;tasks.py&lt;/h3&gt;
 &lt;pre&gt;&lt;code class=&quot;lang-python&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;from&lt;/span&gt; invoke &lt;span class=&quot;keyword&quot;&gt;import&lt;/span&gt; task, run
 
 &lt;span class=&quot;meta&quot;&gt;@task&lt;/span&gt;
@@ -60,10 +60,11 @@
     ctx.run(&lt;span class=&quot;string&quot;&gt;'wintersmith build'&lt;/span&gt;)
     ctx.run(&lt;span class=&quot;string&quot;&gt;'cp -R build/* ../'&lt;/span&gt;)
     ctx.run(&lt;span class=&quot;string&quot;&gt;'cp ../articles/now/index.html ../now.html'&lt;/span&gt;)
-    ctx.run(&lt;span class=&quot;string&quot;&gt;'git add -all'&lt;/span&gt;)
+    ctx.run(&lt;span class=&quot;string&quot;&gt;'git add -A'&lt;/span&gt;)
     ctx.run(&lt;span class=&quot;string&quot;&gt;'git commit -m &quot;automated push from terminal&quot; '&lt;/span&gt;)
     ctx.run(&lt;span class=&quot;string&quot;&gt;'git push -f origin master'&lt;/span&gt;)
     ctx.run(&lt;span class=&quot;string&quot;&gt;'firefox http://github.benmcnelly.com'&lt;/span&gt;)
+    ctx.run(&lt;span class=&quot;string&quot;&gt;'firefox https://github.com/benmcnelly/benmcnelly.github.io'&lt;/span&gt;)
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;I really like that I can see changes live as I work on the template, style or content.&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&quot;lang-bash&quot;&gt;⟫ wintersmith preview
