@@ -32,7 +32,7 @@
     ctx.run(<span class="string">'wintersmith build'</span>)
     ctx.run(<span class="string">'cp -R build/* ../'</span>)
     ctx.run(<span class="string">'cp ../articles/now/index.html ../now.html'</span>)
-    ctx.run(<span class="string">'git add -A'</span>)
+    ctx.run(<span class="string">'git add -all'</span>)
     ctx.run(<span class="string">'git commit -m "automated push from terminal" '</span>)
     ctx.run(<span class="string">'git push -f origin master'</span>)
     ctx.run(<span class="string">'firefox http://github.benmcnelly.com'</span>)

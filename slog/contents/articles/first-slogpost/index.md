@@ -24,7 +24,7 @@ def push(ctx):
     ctx.run('wintersmith build')
     ctx.run('cp -R build/* ../')
     ctx.run('cp ../articles/now/index.html ../now.html')
-    ctx.run('git add -A')
+    ctx.run('git add -all')
     ctx.run('git commit -m "automated push from terminal" ')
     ctx.run('git push -f origin master')
     ctx.run('firefox http://github.benmcnelly.com')

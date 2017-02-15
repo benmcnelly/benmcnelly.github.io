@@ -60,7 +60,7 @@
     ctx.run(&lt;span class=&quot;string&quot;&gt;'wintersmith build'&lt;/span&gt;)
     ctx.run(&lt;span class=&quot;string&quot;&gt;'cp -R build/* ../'&lt;/span&gt;)
     ctx.run(&lt;span class=&quot;string&quot;&gt;'cp ../articles/now/index.html ../now.html'&lt;/span&gt;)
-    ctx.run(&lt;span class=&quot;string&quot;&gt;'git add -A'&lt;/span&gt;)
+    ctx.run(&lt;span class=&quot;string&quot;&gt;'git add -all'&lt;/span&gt;)
     ctx.run(&lt;span class=&quot;string&quot;&gt;'git commit -m &quot;automated push from terminal&quot; '&lt;/span&gt;)
     ctx.run(&lt;span class=&quot;string&quot;&gt;'git push -f origin master'&lt;/span&gt;)
     ctx.run(&lt;span class=&quot;string&quot;&gt;'firefox http://github.benmcnelly.com'&lt;/span&gt;)
