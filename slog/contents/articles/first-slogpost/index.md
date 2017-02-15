@@ -13,19 +13,18 @@ Alright, with that out of the way, just what overly complicate way am I doing th
 
 I thought of doing this as a parody of a lot of the "static" site generators I have seen, but adding in some compiling from source, custom kernels and multiple versions of python for different build processes, but settled for using [Wintersmith](https://github.com/jnordberg/wintersmith) to generate things, and some python (inspired by [Jeff Triplett's personal goals](https://github.com/jefftriplett/personal-goals) ) to push it all live.
 
-### Update.py
+### tasks.py
 
 ```python
 from invoke import task, run
 
 @task
 def push(ctx):
-    ctx.run('echo UNGH! lets push!')
+    ctx.run('echo UNGH!''')
     ctx.run('wintersmith build')
     ctx.run('cp -R build/* ../')
     ctx.run('cp ../articles/now/index.html ../now.html')
-    ctx.run('git add -all')
-    ctx.run('cd ..')
+    ctx.run('git add -A')
     ctx.run('git commit -m "automated push from terminal" ')
     ctx.run('git push -f origin master')
     ctx.run('firefox http://github.benmcnelly.com')
