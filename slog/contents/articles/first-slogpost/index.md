@@ -16,19 +16,18 @@ I thought of doing this as a parody of a lot of the "static" site generators I h
 ### Update.py
 
 ```python
-from invoke import run, task
+from invoke import task, run
 
 @task
-def push():
-    run('cd /home/bmcnelly/projects/benmcnelly.github.io/slog')
-    run('wintersmith build')
-    run('cp -R build/* ../')
-    run('cp ../articles/now/index.html ../now.html')
-    run('git checkout master')
-    run('git add -A')
-    run('git cia -m "automated push from terminal"')
-    run('git push origin master')
-    run('open https://benmcnelly.com')
+def push(ctx):
+    ctx.run('echo UNGH!''')
+    ctx.run('wintersmith build')
+    ctx.run('cp -R build/* ../')
+    ctx.run('cp ../articles/now/index.html ../now.html')
+    ctx.run('git add -A')
+    ctx.run('git commit -m "automated push from terminal" ')
+    ctx.run('git push -f origin master')
+    ctx.run('firefox http://github.benmcnelly.com')
 ```
 
 I really like that I can see changes live as I work on the template, style or content.

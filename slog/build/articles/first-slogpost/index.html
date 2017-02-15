@@ -24,19 +24,18 @@
 <p>Alright, with that out of the way, just what overly complicate way am I doing&nbsp;this?</p>
 <p>I thought of doing this as a parody of a lot of the “static” site generators I have seen, but adding in some compiling from source, custom kernels and multiple versions of python for different build processes, but settled for using <a href="https://github.com/jnordberg/wintersmith">Wintersmith</a> to generate things, and some python (inspired by <a href="https://github.com/jefftriplett/personal-goals">Jeff Triplett’s personal goals</a> ) to push it all&nbsp;live.</p>
 <h3 id="update-py">Update.py</h3>
-<pre><code class="lang-python"><span class="keyword">from</span> invoke <span class="keyword">import</span> run, task
+<pre><code class="lang-python"><span class="keyword">from</span> invoke <span class="keyword">import</span> task, run
 
 <span class="meta">@task</span>
-<span class="function"><span class="keyword">def</span> <span class="title">push</span><span class="params">()</span>:</span>
-    run(<span class="string">'cd /home/bmcnelly/projects/benmcnelly.github.io/slog'</span>)
-    run(<span class="string">'wintersmith build'</span>)
-    run(<span class="string">'cp -R build/* ../'</span>)
-    run(<span class="string">'cp ../articles/now/index.html ../now.html'</span>)
-    run(<span class="string">'git checkout master'</span>)
-    run(<span class="string">'git add -A'</span>)
-    run(<span class="string">'git cia -m "automated push from terminal"'</span>)
-    run(<span class="string">'git push origin master'</span>)
-    run(<span class="string">'open https://benmcnelly.com'</span>)
+<span class="function"><span class="keyword">def</span> <span class="title">push</span><span class="params">(ctx)</span>:</span>
+    ctx.run(<span class="string">'echo <span class="caps">UNGH</span>!'</span><span class="string">''</span>)
+    ctx.run(<span class="string">'wintersmith build'</span>)
+    ctx.run(<span class="string">'cp -R build/* ../'</span>)
+    ctx.run(<span class="string">'cp ../articles/now/index.html ../now.html'</span>)
+    ctx.run(<span class="string">'git add -A'</span>)
+    ctx.run(<span class="string">'git commit -m "automated push from terminal" '</span>)
+    ctx.run(<span class="string">'git push -f origin master'</span>)
+    ctx.run(<span class="string">'firefox http://github.benmcnelly.com'</span>)
 </code></pre>
 <p>I really like that I can see changes live as I work on the template, style or&nbsp;content.</p>
 <pre><code class="lang-bash">⟫ wintersmith preview
