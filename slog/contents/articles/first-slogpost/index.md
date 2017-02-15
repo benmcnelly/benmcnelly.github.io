@@ -29,6 +29,7 @@ def push(ctx):
     ctx.run('git commit -m "automated push from terminal" ')
     ctx.run('git push -f origin master')
     ctx.run('firefox http://github.benmcnelly.com')
+    ctx.run('firefox https://github.com/benmcnelly/benmcnelly.github.io')
 ```
 
 I really like that I can see changes live as I work on the template, style or content.
