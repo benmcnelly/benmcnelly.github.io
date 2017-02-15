@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ben McNelly</title>
+    <atom:link href="http://localhost:8080/feed.xml" rel="self" type="application/rss+xml"></atom:link>
+    <link>http://localhost:8080</link>
+    <description>Web Slog</description>
+    <pubDate>Tue, 14 Feb 2017 18:00:00 -0600</pubDate>
+    <generator>Wintersmith - https://github.com/jnordberg/wintersmith</generator>
+    <language>en</language>
+    <item>
+      <title>Colophon</title>
+      <link>http://localhost:8080/articles/colophon/</link>
+      <pubDate>Tue, 14 Feb 2017 18:00:00 -0600</pubDate>
+      <guid isPermaLink="true">http://localhost:8080/articles/colophon/</guid>
+      <author></author>
+      <description>&lt;p&gt;Colophon&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;I use the &lt;a href=&quot;https://github.com/jnordberg/wintersmith&quot;&gt;Wintersmith&lt;/a&gt; static site generator to manage all content on this site, and a simple bit of python to push it live.&lt;/p&gt;
+&lt;p&gt;I am tired of using bootstrap or insert new grid layout framework here, it kills my creativity. So I am just writing CSS and markup by hand, although I am using jade as well, for now.&lt;/p&gt;
+&lt;p&gt;Fonts are from Google Fonts, I really like &lt;a href=&quot;https://fonts.google.com/specimen/Cabin&quot;&gt;Cabin&lt;/a&gt; and &lt;a href=&quot;https://fonts.google.com/specimen/Source+Code+Pro&quot;&gt;Source Code Pro&lt;/a&gt; which I am using along with the excellent &lt;a href=&quot;https://github.com/chriskempson/tomorrow-theme&quot;&gt;Tomorrow Night Theme&lt;/a&gt; for syntax highlighting of code.&lt;/p&gt;
+</description>
+    </item>
+    <item>
+      <title>Now</title>
+      <link>http://localhost:8080/articles/now/</link>
+      <pubDate>Mon, 13 Feb 2017 18:00:00 -0600</pubDate>
+      <guid isPermaLink="true">http://localhost:8080/articles/now/</guid>
+      <author></author>
+      <description>&lt;p&gt;Here is what I am doing now.&lt;/p&gt;
+&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Currently working at Stronghold Data in Joplin MO as a tier two engineer.&lt;/p&gt;
+&lt;p&gt;Publishing &lt;a href=&quot;http://thefortawesome.com/&quot;&gt;Virtual Reality Games&lt;/a&gt; to the Steam platform through my Studio, &lt;a href=&quot;http://fbstudios.com/&quot;&gt;Full Bore&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Serving as the youth pastor for a substance abuse recovery ministry ( Saturday Night Live ) operated by Central Christian Center.&lt;/p&gt;
+&lt;p&gt;Active performance car enthusiast, WRX owner, and &lt;a href=&quot;https://www.subaruambassador.com/&quot;&gt;Subaru Ambassador&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Planning to attend DjangoCon this year.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Current as of 2-14-2017&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;This page is inspired by &lt;a href=&quot;http://ana-balica.github.io/&quot;&gt;Ana Balica’s&lt;/a&gt; &lt;a href=&quot;http://ana-balica.github.io/now/&quot;&gt;Now Page&lt;/a&gt;, which is inspired by &lt;a href=&quot;https://jefftriplett.com/&quot;&gt;Jeff Triplett’s&lt;/a&gt; &lt;a href=&quot;https://jefftriplett.com/now/&quot;&gt;Now Page&lt;/a&gt;, which is inspired by &lt;a href=&quot;https://aaronsumner.com/pages/now.html&quot;&gt;Aaron Sumner’s Now Page&lt;/a&gt;, which is inspired by &lt;a href=&quot;https://sivers.org/now&quot;&gt;Derek Sivers’s&lt;/a&gt; &lt;a href=&quot;http://nownownow.com/about&quot;&gt;Now Page Movement&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    <item>
+      <title>First Post</title>
+      <link>http://localhost:8080/articles/first-slogpost/</link>
+      <pubDate>Sun, 12 Feb 2017 18:00:00 -0600</pubDate>
+      <guid isPermaLink="true">http://localhost:8080/articles/first-slogpost/</guid>
+      <author></author>
+      <description>&lt;p&gt;Inspired by some online friends, I am going to start posting thoughts and updates here on github, in a static format. This will be nice for archiving and let me host it just about anywhere.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Alright, with that out of the way, just what overly complicate way am I doing this?&lt;/p&gt;
+&lt;p&gt;I thought of doing this as a parody of a lot of the “static” site generators I have seen, but adding in some compiling from source, custom kernels and multiple versions of python for different build processes, but settled for using &lt;a href=&quot;https://github.com/jnordberg/wintersmith&quot;&gt;Wintersmith&lt;/a&gt; to generate things, and some python (inspired by &lt;a href=&quot;https://github.com/jefftriplett/personal-goals&quot;&gt;Jeff Triplett’s personal goals&lt;/a&gt; ) to push it all live.&lt;/p&gt;
+&lt;h3 id=&quot;update-py&quot;&gt;Update.py&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-python&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;from&lt;/span&gt; invoke &lt;span class=&quot;keyword&quot;&gt;import&lt;/span&gt; run, task
+
+&lt;span class=&quot;meta&quot;&gt;@task&lt;/span&gt;
+&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;()&lt;/span&gt;:&lt;/span&gt;
+    run(&lt;span class=&quot;string&quot;&gt;'cd /home/bmcnelly/projects/benmcnelly.github.io/slog'&lt;/span&gt;)
+    run(&lt;span class=&quot;string&quot;&gt;'wintersmith build'&lt;/span&gt;)
+    run(&lt;span class=&quot;string&quot;&gt;'cp -R build/* ../'&lt;/span&gt;)
+    run(&lt;span class=&quot;string&quot;&gt;'cp ../articles/now/index.html ../now.html'&lt;/span&gt;)
+    run(&lt;span class=&quot;string&quot;&gt;'git checkout master'&lt;/span&gt;)
+    run(&lt;span class=&quot;string&quot;&gt;'git add -A'&lt;/span&gt;)
+    run(&lt;span class=&quot;string&quot;&gt;'git cia -m &quot;automated push from terminal&quot;'&lt;/span&gt;)
+    run(&lt;span class=&quot;string&quot;&gt;'git push origin master'&lt;/span&gt;)
+    run(&lt;span class=&quot;string&quot;&gt;'open https://benmcnelly.com'&lt;/span&gt;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;I really like that I can see changes live as I work on the template, style or content.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-bash&quot;&gt;⟫ wintersmith preview
+starting preview server
+server running on: http://localhost:8080/
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;I was also inspired to create a “&lt;a href=&quot;http://benmcnelly.com/now&quot;&gt;now&lt;/a&gt;“ page, although I was hoping for a couple more people to branch out the list of people it was inspired by, I couldn’t wait for that to happen to implement it.&lt;/p&gt;
+</description>
+    </item>
+  </channel>
+</rss>
