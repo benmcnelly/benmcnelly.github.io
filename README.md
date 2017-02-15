@@ -11,7 +11,6 @@ Build :
 
     $ wintersmith build
 
-Deploy :
+Deploy (this will also build) :
 
-    $ cd ../
-    $ python update.py
+    $ invoke push
