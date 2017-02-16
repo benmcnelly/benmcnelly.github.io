@@ -5,7 +5,7 @@ date: 2017-02-13
 template: article.jade
 ---
 
-Inspired by some online friends, I am going to start posting thoughts and updates here on github, in a static format. This will be nice for archiving and let me host it just about anywhere.
+Inspired by some online friends, I am going to start posting thoughts and updates using [Github Pages](https://pages.github.com/), in a static format. This will be nice for archiving and let me host it just about anywhere.
 
 ---
 

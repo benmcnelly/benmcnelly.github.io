@@ -47,7 +47,7 @@
       <pubDate>Sun, 12 Feb 2017 18:00:00 -0600</pubDate>
       <guid isPermaLink="true">http://localhost:8080/articles/first-slogpost/</guid>
       <author></author>
-      <description>&lt;p&gt;Inspired by some online friends, I am going to start posting thoughts and updates here on github, in a static format. This will be nice for archiving and let me host it just about anywhere.&lt;/p&gt;
+      <description>&lt;p&gt;Inspired by some online friends, I am going to start posting thoughts and updates using &lt;a href=&quot;https://pages.github.com/&quot;&gt;Github Pages&lt;/a&gt;, in a static format. This will be nice for archiving and let me host it just about anywhere.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;Alright, with that out of the way: In just what overly complicated way should I do this static site?&lt;/p&gt;
 &lt;p&gt;I thought of doing this as a parody of a lot of the “static” site generators I have seen, but adding in some compiling from source, custom kernels, and multiple versions of python for different build processes; but settled for using &lt;a href=&quot;https://github.com/jnordberg/wintersmith&quot;&gt;Wintersmith&lt;/a&gt; to generate things, and some python (inspired by &lt;a href=&quot;https://github.com/jefftriplett/personal-goals&quot;&gt;Jeff Triplett’s personal goals&lt;/a&gt; ) to push it all live.&lt;/p&gt;
