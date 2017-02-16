@@ -66,7 +66,7 @@
     ctx.run(&lt;span class=&quot;string&quot;&gt;'firefox http://github.benmcnelly.com'&lt;/span&gt;)
     ctx.run(&lt;span class=&quot;string&quot;&gt;'firefox https://github.com/benmcnelly/benmcnelly.github.io'&lt;/span&gt;)
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;I really like that I can see changes live as I work on the template, style or content.&lt;/p&gt;
+&lt;p&gt;I really like that I can see changes live as I work on the template, style, and publish content.&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&quot;lang-bash&quot;&gt;⟫ wintersmith preview
 starting preview server
 server running on: http://localhost:8080/

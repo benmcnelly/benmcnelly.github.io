@@ -31,7 +31,7 @@ def push(ctx):
     ctx.run('firefox https://github.com/benmcnelly/benmcnelly.github.io')
 ```
 
-I really like that I can see changes live as I work on the template, style or content.
+I really like that I can see changes live as I work on the template, style, and publish content.
 
 ```bash
 ⟫ wintersmith preview
