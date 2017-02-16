@@ -9,9 +9,9 @@ Inspired by some online friends, I am going to start posting thoughts and update
 
 ---
 
-Alright, with that out of the way, just what overly complicate way am I doing this?
+Alright, with that out of the way: In just what overly complicated way should I do this static site?
 
-I thought of doing this as a parody of a lot of the "static" site generators I have seen, but adding in some compiling from source, custom kernels and multiple versions of python for different build processes, but settled for using [Wintersmith](https://github.com/jnordberg/wintersmith) to generate things, and some python (inspired by [Jeff Triplett's personal goals](https://github.com/jefftriplett/personal-goals) ) to push it all live.
+I thought of doing this as a parody of a lot of the "static" site generators I have seen, but adding in some compiling from source, custom kernels, and multiple versions of python for different build processes; but settled for using [Wintersmith](https://github.com/jnordberg/wintersmith) to generate things, and some python (inspired by [Jeff Triplett's personal goals](https://github.com/jefftriplett/personal-goals) ) to push it all live.
 
 ### tasks.py
 
@@ -39,4 +39,4 @@ starting preview server
 server running on: http://localhost:8080/
 ```
 
-I was also inspired to create a "[now](http://benmcnelly.com/now)" page, although I was hoping for a couple more people to branch out the list of people it was inspired by, I couldn't wait for that to happen to implement it.
+I was also inspired to create a "[now](http://github.benmcnelly.com/now)" page, although I was hoping for a couple more people to branch out the list of people it was inspired by, I couldn't wait for that to happen to implement it.
